@@ -1,0 +1,66 @@
+root_dir: ./app/graphrag
+input:
+  base_dir: ./app/graphrag/data/input
+  file_type: text
+  encoding: utf-8
+
+output:
+  base_dir: ./app/graphrag/data/output
+  llm_responses: true
+
+storage:
+  type: file
+
+cache:
+  type: file
+
+encoding_model: cl100k_base
+
+chunk:
+  size: 500
+  overlap: 50
+  group_by_columns: [id]
+
+llm:
+  type: ollama_chat
+  api_key: dummy
+  model: deepseek-r1:32b-qwen-distill-q8_0
+  base_url: http://localhost:11434/api
+  temperature: 0
+  max_tokens: 4096
+  concurrency: 2
+  retry_config:
+    retries: 3
+    min_wait_seconds: 2
+    max_wait_seconds: 10
+
+embeddings:
+  type: ollama_embedding
+  api_key: dummy
+  model: bge-m3
+  base_url: http://localhost:11434/api
+  dimension: 1024
+  batch_size: 8
+  concurrency: 2
+  rate_limit:
+    tokens_per_minute: 100000
+    requests_per_minute: 60
+
+# 完全禁用实体提取和社区报告
+entity_extraction:
+  strategy: null
+
+community_reports:
+  strategy: null
+
+claim_extraction:
+  enabled: false
+
+snapshots:
+  graphml: true
+  raw_text: true
+  transients: true
+
+parallelization:
+  num_threads: 4
+  stagger: 0.25

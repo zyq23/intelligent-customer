@@ -1,0 +1,1 @@
+Generate community report based on the entities and relationships.

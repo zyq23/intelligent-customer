@@ -1,0 +1,107 @@
+# ============================================================
+# Personal / Training / Non-project files (DO NOT COMMIT)
+# ============================================================
+# Training materials from 24级研究生 - remove entirely
+customer-service-platform/24级研究生培养方案及学位答辩要求等相关文件/
+
+# ZCode & Claude personal configuration
+.zcode/
+.claude/
+
+# ============================================================
+# Secrets & Environment Files (NEVER commit real credentials)
+# ============================================================
+# Backend environment with real API keys and passwords
+customer-service-platform/backend/.env
+
+# GraphRAG runtime config with real API keys
+customer-service-platform/backend/app/graphrag/data/.env
+
+# Example files are OK (templates)
+!customer-service-platform/.env.example
+!customer-service-platform/backend/.env.example
+!customer-service-platform/backend/app/graphrag/data/settings.yaml.example
+
+# ============================================================
+# Python & Virtual Environment
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.venv
+venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache
+*.log
+logs/
+log/
+
+# ============================================================
+# IDE & Editor
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+*~
+
+# ============================================================
+# Build & Distribution
+# ============================================================
+build/
+dist/
+*.egg-info/
+manifest
+*.spec
+
+# ============================================================
+# Large Model Files (GitHub blocks >100MB)
+# ============================================================
+# Microsoft GraphRAG downloaded models (multi-GB)
+customer-service-platform/backend/app/graphrag/models/
+# HuggingFace hub cache
+customer-service-platform/backend/app/graphrag/models/*/*/snapshots/
+customer-service-platform/backend/app/graphrag/models/*/*/blobs/
+
+# ============================================================
+# Generated Data & Cache (Regenerated at runtime)
+# ============================================================
+# GraphRAG generated indices and cache
+customer-service-platform/backend/app/graphrag/data/output/
+customer-service-platform/backend/app/graphrag/data/#Uf05clancedb
+customer-service-platform/backend/app/graphrag/data/cache
+customer-service-platform/backend/app/graphrag/data/update_output
+customer-service-platform/backend/app/graphrag/text_logs/
+customer-service-platform/backend/app/graphrag/text_cache/
+customer-service-platform/backend/app/graphrag/pdf_outputs
+customer-service-platform/backend/app/graphrag/*.json
+customer-service-platform/backend/app/graphrag/data/prompt_turn_output
+customer-service-platform/backend/app/graphrag/data/pdf_csv_exports
+
+# ============================================================
+# Uploads & Temporary Files
+# ============================================================
+customer-service-platform/uploads/
+customer-service-platform/backend/uploads/
+customer-service-platform/backend/app/graphrag/data/input/*/*_extracted.txt
+
+# ============================================================
+# Miscellaneous
+# ============================================================
+*.tmp
+*.temp
+backup*/
+*_archive/
+.examples
+examples/
+turbo/
+.pipeline

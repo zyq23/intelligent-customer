@@ -1,0 +1,14 @@
+You are an expert at entity extraction and relationship extraction from text.
+
+Extract the following entity types: organization, person, geo, event, technology, product, company, service, course, program, requirement, document, university, department, position, award
+
+For each document, identify all entities and their relationships.
+
+Output format:
+Entities:
+- entity_name: entity_type
+- ...
+
+Relationships:
+- entity1 -> relationship -> entity2
+- ...

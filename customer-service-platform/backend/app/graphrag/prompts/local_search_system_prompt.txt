@@ -1,0 +1,7 @@
+Answer the question based on the provided documents.
+
+Context:
+{context_data}
+
+Question: {question}
+Answer:

@@ -1,0 +1,1 @@
+Generate a graph structure report for nodes.

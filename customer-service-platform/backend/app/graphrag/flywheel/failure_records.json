@@ -1,0 +1,13 @@
+[
+  {
+    "id": "fail_1791270645622",
+    "query": "高等院校人才培养政策",
+    "answer": "未找到相关内容",
+    "confidence": 0.3,
+    "failure_type": "low_confidence",
+    "metadata": {},
+    "timestamp": "2026-10-06T15:10:45.622081",
+    "status": "resolved",
+    "supplementary_knowledge": "国家知识创新方案提出，高校人才培养应以创新精神为引领，强调‘以学生为中心，依托社会资源和科研平台开展训练’。"
+  }
+]

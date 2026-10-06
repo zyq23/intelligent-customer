@@ -1,0 +1,9 @@
+从文本中提取实体和关系。
+
+实体类型：organization, person, geo, event, technology, product, company, service
+
+请输出 JSON 格式：
+{
+  "entities": [{"name": "...", "type": "..."}],
+  "relationships": [{"source": "...", "target": "...", "relationship": "..."}]
+}
